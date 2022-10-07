@@ -22,6 +22,7 @@
             display: block;
             margin-top: -23%;
             margin-right: -13%;
+            position: relative;
         }
 
         .cr {
@@ -35,9 +36,12 @@
     <img src="maungnew.png" alt="maung" style="width:auto" class="logo">
     <form action="Maung Homepage.html" method="get" target="_self" class="mid">
         <fieldset>
-            <legend><b>EVOS MAUNG MEMBERSHIP</b></legend>
-            <label for="username"><b>Username: </b></label><input type="username" id="username" name="username">
-            <p><label for="password"><b>Password: </b></label><input type="password" id="password" name="password"></p>
+            <legend><b style="font-style:italic;">EVOS MAUNG MEMBERSHIP</b></legend>
+            <label for="username"><b>Username: </b></label><input type="username" id="username" name="username"
+                required>
+            <p><label for="password"><b>Password: </b></label><input type="password" id="password" name="password"
+                    required>
+            </p>
             <input type="submit" value="Login">
             <p><a href="Create Account.html">Create Account</a>
             </p>
