@@ -1,0 +1,27 @@
+body {
+    background-color: #DFF6FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mid {
+    display: block;
+    margin: 300px 0;
+}
+
+.logo {
+    display: block;
+    margin-top: -23%;
+    margin-right: -13%;
+    position: relative;
+}
+
+.cr {
+    display: block;
+    margin: -5%;
+}
+
+fieldset {
+    border-radius: 10px;
+}
