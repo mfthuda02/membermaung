@@ -29,6 +29,10 @@
             display: block;
             margin: -5%;
         }
+
+        fieldset {
+            border-radius: 10px;
+        }
     </style>
 </head>
 
@@ -39,14 +43,14 @@
             <legend><b style="font-style:italic;">EVOS MAUNG MEMBERSHIP</b></legend>
             <label for="username"><b>Username: </b></label><input type="username" id="username" name="username"
                 required>
-            <p><label for="password"><b>Password: </b></label><input type="password" id="password" name="password"
-                    required>
+            <p><label for="password"><b>Password: </b></label><input type="password" id="id_password" name="password"
+                    autocomplete="current-password" required>
             </p>
             <input type="submit" value="Login">
             <p><a href="Create Account.html">Create Account</a>
             </p>
             <footer style="text-align:center;" class="cr">
-                <p>©Copyright 2022 Evos Maung</p>
+                <p style="font-family: cursive;">©Copyright 2022 Evos Maung</p>
             </footer>
         </fieldset>
     </form>
