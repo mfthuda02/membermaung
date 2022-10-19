@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF6BF;
+}
+
+.input {
+    display: block;
+    margin: 300px 0;
+}
+
+.logo {
+    display: block;
+    margin-top: -23%;
+    margin-right: -10.5%;
+    width: 10.75%;
+}
+
+fieldset {
+    border-radius: 15px;
+}
