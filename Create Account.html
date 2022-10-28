@@ -12,7 +12,7 @@
 
 <body>
     <img src="m1.png" class="logo">
-    <form id="myForm" class="input">
+    <form id="myForm" class="input" name="myForm">
         <fieldset>
             <legend><b>Input Data</b></legend>
             <label>Enter Username</label><br>
@@ -41,19 +41,13 @@
                 console.log(res)
                 if (res.status === 201) {
                     alert("Form Data Submitted :)")
+                    document.myForm.reset();
                     return;
                 } else {
                     alert("Udah Yakin Belom?")
                     return;
                 }
             })
-        }
-    </script>
-
-    <script>
-        function submitForm() {
-            document.contact - form.submit();
-            document.contact - form.reset();
         }
     </script>
 
