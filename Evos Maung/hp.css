@@ -2,4 +2,73 @@
     height: 31.25cm;
     width: 31.25cm ;
     position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    color: black;
+}
+p.letter{
+    font-size: 3.5cm;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+}
+.letter-M{
+    left: 0.2cm;
+}
+.letter-N{
+    right: 0.2cm;
+}
+.moon{
+    background-color: navy;
+    height: 8cm;
+    width: 8cm;
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    box-shadow: 0 0 0 0.6cm
+    rgba(255, 255, 255, 0.05),
+    0 0 0 1.2cm rgba(255, 255, 255, 0.05),
+    0 0 0 1.8cm rgba(255, 255, 255, 0.05);
+}
+.moon::after{
+    position: absolute;
+    content: "";
+    background-color: #e6e6e6;
+    height: 0.9cm;
+    width: 0.9cm;
+    border-radius: 50%;
+    top: 3.75cm;
+    left: 1.25cm;
+    box-shadow: 0.9cm -2.1cm 0 0.2cm #e6e6e6,
+    1.5cm -0.3cm 0 -0.06cm #e6e6e6;
+}
+.orbit{
+    height: 18.75cm;
+    width: 18.75cm;
+    border-radius: 50%;
+    position: absolute;
+    left: -5.2cm;
+    bottom: -5.2cm;
+    animation: spin 8s infinite linear;
+}
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.orbit p{
+    position: absolute;
+    font-size: 3.5cm;
+    top: 0.25cm;
+    left: 0.25cm;
+}
+@media screen and (min-widht: 700px){
+    .container{
+        font-size: 20px;
+    }
 }
